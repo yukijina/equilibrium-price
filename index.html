@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- STYLESHEET -->
+  <link rel="stylesheet" href="css/style.css">    
+  <title>Keypath Test Exercise</title>
+</head>
+<body>
+  <div class="root">
+    <!-- Header -->
+    <header class="heading__container">
+      <h1>Search Equilibrium Price</h1>
+    </header>
+
+    <!-- Search Form -->
+    <div class="main__container">
+      <form class="searchform">
+        <h2>Search</h2>
+        <p class="form__subtitle">Please type product name or keyword to check the price!</p>
+        <!-- <label for="product">
+          Product Name -->
+          <input type="text" name="product" id="product" minlength=2 required />
+        <!-- </label> -->
+        <button class="form__btn form__btn-submit" type="submit">SUBMIT</button>
+        <button class="form__btn form__btn-clear">CLEAR</button>
+      </form>
+
+      <!-- Past Search Result -->
+      <div class="pastsearch__container">
+      </div>
+    </div>
+
+    <!-- Search Results -->
+    <div class="result__container">
+      <div class="loader">
+      </div>
+    </div>
+     
+  </div>
+  <!-- JavaScript -->
+  <script src="js/index.js"></script>
+</body>
+</html>

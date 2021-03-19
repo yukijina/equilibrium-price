@@ -1,0 +1,17 @@
+{
+  "name": "keypath_exercise",
+  "version": "1.0.0",
+  "description": "test exercise",
+  "main": "index.js",
+  "scripts": {
+    "dev": "live-server --browser=chrome"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript",
+    "jquery"
+  ],
+  "author": "Yukiji Nakatsuka",
+  "license": "ISC"
+}
