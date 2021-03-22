@@ -13,7 +13,9 @@
   <!-- STYLESHEET -->
   <link rel="stylesheet" href="css/style.css">    
   <title>Keypath Test Exercise</title>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
+
 <body>
   <div class="root">
     <!-- Header -->
@@ -26,10 +28,7 @@
       <form class="searchform">
         <h2>Search</h2>
         <p class="form__subtitle">Please type product name or keyword to check the price!</p>
-        <!-- <label for="product">
-          Product Name -->
-          <input type="text" name="product" id="product" minlength=2 required />
-        <!-- </label> -->
+        <input type="text" name="product" id="product" minlength=2 required />
         <button class="form__btn form__btn-submit" type="submit">SUBMIT</button>
         <button class="form__btn form__btn-clear">CLEAR</button>
       </form>
@@ -45,8 +44,25 @@
       </div>
     </div>
      
-  </div>
-  <!-- JavaScript -->
-  <script src="js/index.js"></script>
-</body>
+    <!-- Equilibrium Results -->
+    <div id="input" class="calc__container">
+      <form>
+        <div class="section">
+          <!-- Price for XYZ Widget: -->
+          <p class="section__subtitle"></p>
+        </div>
+      </form>
+    </div>
+
+    <div id="result"></div>
+  
+
+    <!-- google -->
+    <div id="linear_div"></div>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/index.js"></script>
+  </body>
 </html>

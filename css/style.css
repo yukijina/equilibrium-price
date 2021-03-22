@@ -140,6 +140,11 @@ li {
   100% { transform: rotate(360deg); }
 }
 
+/* Component - calculate */
+.section__price {
+  margin-right: 1.5rem;
+  margin-left: 0.2rem;
+}
 
 /* Media Query - Responsive */
 /* 
