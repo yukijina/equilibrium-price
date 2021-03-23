@@ -244,7 +244,7 @@ function drawChart(position=5) {
   const options = {
     title: 'Equilibrium Price',
     legend: { position: 'bottom' },
-    width: 600,
+    width: 500,
     height: 500,
     fontSize:8,
     hAxis: {

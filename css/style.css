@@ -177,6 +177,7 @@ li {
   .searchform {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   label {
@@ -190,5 +191,9 @@ li {
 
   .pastsearch__btn {
     width: 15rem;
+  }
+
+  #linear_div {
+    margin-left: -5rem;
   }
 }
