@@ -96,6 +96,10 @@ li {
   background-color:#6492E3;
 }
 
+.form__btn-submit:disabled {
+  visibility: hidden;
+}
+
 /* Component - Past Search Results */
 .pastsearch__subtitle {
   font-size: 1.2rem;

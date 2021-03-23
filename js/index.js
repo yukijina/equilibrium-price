@@ -15,6 +15,7 @@ const request = new XMLHttpRequest();
 searchBtn.addEventListener('click', function(e) {
   e.preventDefault();
   product = document.getElementById('product').value;
+  searchBtn.disabled = true;
 
   if (product === '' || product.length < 2) {
     alert('Product Name is required');
