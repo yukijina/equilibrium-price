@@ -1,5 +1,5 @@
-let API_KEY;
-let API_HOST;
+// let API_KEY;
+// let API_HOST;
 const searchBtn = document.querySelector('.form__btn-submit');
 const clearBtn = document.querySelector('.form__btn-clear');
 const resultContainer = document.querySelector('.result__container');
@@ -34,8 +34,8 @@ function sendData(product) {
   document.querySelector('.loader').style.display = 'block';
 
   request.open('GET', `https://amazon23.p.rapidapi.com/product-search?query=${product}&page=1&country=US`, true);
-  request.setRequestHeader('x-rapidapi-key', API_KEY);
-  request.setRequestHeader('x-rapidapi-host', API_HOST);
+  request.setRequestHeader('x-rapidapi-key', 'ac620cbdf7msh6644200f423ab71p1cb203jsnec1d60cbe315');
+  request.setRequestHeader('x-rapidapi-host', 'amazon23.p.rapidapi.com');
   request.setRequestHeader('useQueryString', true);
 
   request.onload = function() {
@@ -76,9 +76,8 @@ function sendData(product) {
       })
 
       average = Math.round((sum / 10) * 100 / 100).toFixed(2);
-      console.log('ave', average);
       price = parseInt(average);
-      console.log(price, typeof price);
+     
       p.textContent = `Average Price: USD ${average}`;
       p1.textContent = `Sold 100/month: USD ${average * 100}`;
       p2.textContent = `Sold 200/month: USD ${average * 200}`;
