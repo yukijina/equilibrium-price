@@ -35,8 +35,8 @@ function sendData(product) {
   document.querySelector('.loader').style.display = 'block';
 
   request.open('GET', `https://amazon23.p.rapidapi.com/product-search?query=${product}&page=1&country=US`, true);
-  request.setRequestHeader('x-rapidapi-key', 'ac620cbdf7msh6644200f423ab71p1cb203jsnec1d60cbe315');
-  request.setRequestHeader('x-rapidapi-host', 'amazon23.p.rapidapi.com');
+  request.setRequestHeader('x-rapidapi-key', API_KEY);
+  request.setRequestHeader('x-rapidapi-host', API_HOST);
   request.setRequestHeader('useQueryString', true);
 
   request.onload = function() {
